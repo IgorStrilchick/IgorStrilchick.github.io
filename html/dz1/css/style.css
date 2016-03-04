@@ -6,7 +6,6 @@ body {
 
 .wrapper {
     width: 415px;
-    height: 655px;
     margin: 0 auto;
     padding: 48px;
     background-color: #FFFFFF;
@@ -54,7 +53,6 @@ span {
 
 a {
     display: block;
-    padding-left: 15px;
     font-size: 16px;
 }
 
