@@ -6,15 +6,14 @@ body {
 
 .wrapper {
     width: 966px;
-    height: 950px;
     margin: 0 auto;
-    padding: 50px 48px 0 46px;
+    padding: 50px 48px 50px 46px;
     background-color: #ffffff;
     box-shadow: 0 0 5px 5px #D6D6D6;
 }
 
 .horMenu {
-    padding: 34px 0 0 0;
+    margin: 34px 0 0 0;
 }
 
 .mainMenu {
@@ -25,8 +24,16 @@ body {
         -moz-linear-gradient( 90deg, rgb( 68, 67, 67 ) 0%, rgb( 94, 94, 94 ) 100%);
     background-image: 
       -webkit-linear-gradient( 90deg, rgb( 68, 67, 67 ) 0%, rgb( 94, 94, 94 ) 100%);
-    height: 40px;
 }
+
+.mainMenu:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 
 .mainMenuItem {
     float: left;
@@ -36,7 +43,7 @@ body {
     display: block;
     text-align: center;
     padding: 13px 25px;
-    margin-right: 45px; 
+    margin: 0 2px;
     text-decoration: none;
     font-size: 14px;
     font-family: "Times New Roman";
@@ -47,13 +54,14 @@ body {
 
 /* Change the link on hover */
 .mainMenuItem a:hover {
+    margin: 0;
     background-color: black;
     border-left: 2px solid #838383;
     border-right: 2px solid #838383;
 }
 
 .container {
-    padding: 40px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .sideBar {
@@ -66,7 +74,6 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 240px;
     border: 1px solid #c8c8c8;
 }
 
@@ -93,8 +100,17 @@ body {
     color: #2c2c2c;
 }
 
+.container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .content {
     float: right;
+    width: 678px;
 }
 
 .imageBox {
@@ -120,27 +136,32 @@ body {
 }
 
 .footer {
+    margin: 40px 0 0 0;
+    background-color: #e1e1e1;
+}
+
+.footer:after {
+    content: ".";
+    display: block;
+    height: 0;
     clear: both;
-    padding: 40px 0 0 0;
+    visibility: hidden;
 }
 
 .footerMenu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #e1e1e1;
-    height: 40px;
 }
 
 .footerMenuItem {
     float: left;
+    padding: 13px 25px;
 }
 
 .footerMenuItem a {
     display: block;
     text-align: center;
-    padding: 13px 25px;
-    margin-right: 45px; 
     text-decoration: none;
     font-size: 14px;
     font-family: "Times New Roman";
@@ -153,14 +174,24 @@ body {
     text-decoration:underline;
 }
 
-.footerMenu li:last-child {
-    float: right;
-}
-
 .footerMenuItem p {
     display: block;
-    padding: 13px 25px;
     margin: 0;
+    font-size: 14px;
+    font-family: "Times New Roman";
+    color: #2c2c2c;
+    line-height: 1;
+}
+
+.copyright {
+    float: right;
+    margin-right: 25px;
+}
+
+.copyright p {
+    display: block;
+    text-align: center;
+    text-decoration: none;
     font-size: 14px;
     font-family: "Times New Roman";
     color: #2c2c2c;
