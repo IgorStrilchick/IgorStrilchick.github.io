@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c739f;
+    background-image: url(../img/body_bg.jpg);
+    background-repeat: repeat-x;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 5px #031e29;
+}
+
+.header {
+    padding: 12px 33px 0 28px;
+    height: 164px;
+}
+
+.logo {
+    float:left;
+}
+
+.contacts {
+    float: right;
+}
+
+.contacts p {
+    margin: 0 0 7px 0;
+    font-size: 9px;
+    font-family: "Tahoma";
+    color: #128aa7;
+    text-align: left;
+}
+
+.countriesContainer {
+    margin: 28px 0 0 0;
+    float: right;
+    clear: right;
+}
+
+.countryList {
+    margin: 0;
+    list-style: none;
+}
+
+.countryList li {
+    float: left; /* выстраиваем элементы списка в один ряд */
+}
+
+.countryList li a {
+    display: block;
+    text-align: center;
+    padding-top: 45px; /* внутренний остту чтобы текст был вне фона */
+    font-size: 9px;
+    font-family: "Tahoma";
+    color: #128aa7;
+    background-position: center top; /* выравниваем фон вверх и по центру */
+    background-repeat: no-repeat;
+    width: 57px; /* размеры указываем чтобы картинки полностью отобразились */ 
+}
+
+.india a {
+    background-image: url(../img/i_flag.jpg);
+}
+
+.nepal a {
+    background-image: url(../img/n_flag.jpg);
+}
+
+.tibet a {
+    background-image: url(../img/t_flag.jpg);
+}
+
+.butan a {
+    background-image: url(../img/b_flag.jpg);
+}
+
+.srilanka a {
+    background-image: url(../img/s_flag.jpg);
+}
+
+.maldivu a {
+    background-image: url(../img/m_flag.jpg);
+}
+
+.image {
+    height: 237px;
+    clear: both;
+}
+           
+
+/*------------МЕНЮ-------------*/
+
+.horMenu {
+    border-bottom: 1px solid black;
+    background-color: #303030;
+}
+
+.horMenu:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+    width: 14.281%;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul.menu > li > a:hover {
+    background-color: #303030;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    left: 20px;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #ffffff;
+    background-color: #303030;
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.leftblock {
+    float: left;
+    height: 546px;
+    background-image: url(../img/leftBlock.jpg);
+    background-size: 100%;
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #424c43;
+}
+
+.rightblock {
+    float: right;
+    height: 546px;
+    background-image: url(../img/rightBlock.jpg);
+    font-size: 14px;
+    font-family: "Tahoma";
+    color: #424c43;
+}
+
+.articleName {
+    text-align: center;
+}
+
+p {
+    margin: 7px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 9px;
+    font-family: "Tahoma";
+    color: #ffffff;     
+}
+
+.content:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+
