@@ -18,8 +18,21 @@ body {
     height: 164px;
 }
 
+.header:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .logo {
     float:left;
+}
+
+.logo a {
+    display: block;
+    height: 164px;
 }
 
 .contacts {
@@ -28,14 +41,14 @@ body {
 
 .contacts p {
     margin: 0 0 7px 0;
-    font-size: 9px;
+    font-size: 11px;
     font-family: "Tahoma";
     color: #128aa7;
     text-align: left;
 }
 
 .countriesContainer {
-    margin: 28px 0 0 0;
+    margin: 14px 0 0 0;
     float: right;
     clear: right;
 }
@@ -47,42 +60,25 @@ body {
 
 .countryList li {
     float: left; /* выстраиваем элементы списка в один ряд */
+    margin-left: 14px;
 }
 
 .countryList li a {
     display: block;
     text-align: center;
-    padding-top: 45px; /* внутренний остту чтобы текст был вне фона */
-    font-size: 9px;
+    font-size: 10px;
     font-family: "Tahoma";
     color: #128aa7;
-    background-position: center top; /* выравниваем фон вверх и по центру */
-    background-repeat: no-repeat;
-    width: 57px; /* размеры указываем чтобы картинки полностью отобразились */ 
+
 }
 
-.india a {
-    background-image: url(../img/i_flag.jpg);
+ figure {
+     margin: 0;
+     display: block; /* Блочный элемент */
 }
 
-.nepal a {
-    background-image: url(../img/n_flag.jpg);
-}
-
-.tibet a {
-    background-image: url(../img/t_flag.jpg);
-}
-
-.butan a {
-    background-image: url(../img/b_flag.jpg);
-}
-
-.srilanka a {
-    background-image: url(../img/s_flag.jpg);
-}
-
-.maldivu a {
-    background-image: url(../img/m_flag.jpg);
+.countriesContainer p {
+    margin: 7px 0;
 }
 
 .image {
@@ -169,11 +165,16 @@ ul.menu > li:hover > ul.submenu {
     display: block;
 }
 
+.dropdown:after {
+    content: url(../img/triangle.jpg);
+}
+
 .leftblock {
     float: left;
     height: 546px;
-    background-image: url(../img/leftBlock.jpg);
-    background-size: 100%;
+    background-color: #edeef0;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
     font-size: 14px;
     font-family: "Tahoma";
     color: #424c43;
@@ -182,7 +183,9 @@ ul.menu > li:hover > ul.submenu {
 .rightblock {
     float: right;
     height: 546px;
-    background-image: url(../img/rightBlock.jpg);
+    background-color: #edeef0;
+    border-left: 1px solid #c7cacf;
+    border-right: 1px solid #c7cacf;
     font-size: 14px;
     font-family: "Tahoma";
     color: #424c43;
@@ -198,7 +201,7 @@ p {
 
 .copyright {
     text-align: center;
-    font-size: 9px;
+    font-size: 11px;
     font-family: "Tahoma";
     color: #ffffff;     
 }
