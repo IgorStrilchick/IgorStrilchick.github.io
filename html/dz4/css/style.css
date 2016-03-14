@@ -172,6 +172,8 @@ ul.menu > li:hover > ul.submenu {
 .leftblock {
     float: left;
     height: 546px;
+    width: 169px;
+    padding: 0 24px 0 15px;
     background-color: #edeef0;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
@@ -183,6 +185,8 @@ ul.menu > li:hover > ul.submenu {
 .rightblock {
     float: right;
     height: 546px;
+    width: 169px;
+    padding: 0 24px 0 15px;
     background-color: #edeef0;
     border-left: 1px solid #c7cacf;
     border-right: 1px solid #c7cacf;
@@ -196,7 +200,7 @@ ul.menu > li:hover > ul.submenu {
 }
 
 p {
-    margin: 7px;
+    margin: 7px 0;
 }
 
 .copyright {
