@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneue-thin-webfont.eot');
+    src: url('helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    color: #cccccc;
+}
+
+.wrapper {
+    width: 1215px;
+    margin: 0 auto;
+}
+
+.header:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.login {
+    float: right;
+    margin-right: 20px;
+    background-image: url(../img/login_bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.login:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.login a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px 13px 10px 13px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue Regular";
+    color: #ffffff;
+    line-height: 1;
+}
+
+a span {
+    text-decoration: underline;
+}
+
+.flagBlock {
+    position: relative;
+    float: right;
+    border-left: 1px solid #56a2dc;
+}
+
+.flagBlock:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.flagBlock a {
+    float: right;
+    display: block;
+    text-align: center;
+    margin-top: 1px;
+    padding: 10px 13px 10px 60px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue Regular";
+    color: #ffffff;
+    line-height: 1;
+}
+
+.flagBlock a:before {
+    content: "";
+    display: block;
+    background: url("../img/flag.png") no-repeat;
+    width: 25px;
+    height: 27px;
+    position: absolute;
+    right: 115px;
+    top: 6px;
+}
+
+.mainMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/menu_bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.mainMenu:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+.mainMenuItem {
+    float: right;
+}
+
+.mainMenuItem a {
+    display: block;
+    text-align: center;
+    padding: 10px 13px 10px 13px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Helvetica Neue Regular";
+    color: #60b5ed;
+    line-height: 1;
+}
+
+/* Change the link on hover */
+    .mainMenuItem a:hover {
+    background-color: #4eabda;
+    color: #ffffff;
+}
+
+.content {
+    height: 1028px;
+    weight: 1215px;
+    position: relative;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.formWrapper {
+    position: absolute;
+    top: 208px ;
+    left: 328px;
+}
+
+.form1 {
+    width: 560px;
+    height: 62px;
+    background: rgba( 0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.form1 p {
+    margin: 0px;
+    padding: 19px 0 0 0;
+    font-size: 24px;
+    font-family: "Helvetica Neue Regular";
+    color: #ffffff;
+    line-height: 1;
+}
+
+.form2 {
+    margin: 3px 0 0 0;
+    padding: 36px 0 0 0;
+    width: 560px;
+    height: 549px;
+    background: rgba( 0, 0, 0, 0.6);
+}
+
+.button {
+    margin: 0 auto;
+    text-align: center;
+    width: 276px;
+    height: 34px;
+}
+
+.btnFacebook {
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #28539B, #193F7B); / для webkit-браузеров /
+    background: -moz-linear-gradient(top, #28539B, #193F7B); / для firefox 3.6+ / 
+    background: -o-linear-gradient(top, #28539B, #193F7B); / для Opera 11.10+ /
+    background: -ms-linear-gradient(top, #28539B, #193F7B); / для IE10+ /
+    background: linear-gradient(to bottom, #28539B, #193F7B);
+    border-radius: 5px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnFacebook p {
+    display: inline-block;
+    margin: 0 0 0 37px;
+    padding: 10px 80px 10px 32px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    border-left: 1px solid #4c68a9;
+}
+
+.btnFacebook:before {
+    content: "";
+    display: block;
+    background: url("../img/fb_icon.jpg") no-repeat;
+    width: 9px;
+    height: 20px;
+    position: absolute;
+    right: 249px;
+    top: 8px;
+    border-right: 2px groove #ccc;
+}
+
+.btnFacebook:after {
+    content: "";
+    display: block;
+    background: url("../img/arrow.png") no-repeat;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 30px;
+    top: 13px;
+}
+
+.line {
+    margin: 30px auto;
+    text-align: center;
+    
+}
+
+.line p {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    color: #999999;
+    background-image: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.inputField {
+    margin: 0 auto 16px auto;
+    display: block;
+    height: 35px;
+    width: 258px;
+    padding: 0 0 0 18px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #474747;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    color: #cccccc;
+    background-color: #0f0e0e;
+}
+
+.inputField:focus {
+    background-color: #1b5288;
+    color: #fffbfb;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #689bcc;
+    box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
+-moz-box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
+-webkit-box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
+}
+
+#send_me {
+    margin-left: 142px;
+}
+
+label {
+    padding-left: 8px;
+}
+
+button {
+    display: block;
+    margin: 25px auto 20px auto;
+    padding: 11px 13px;
+    font-size: 14px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    color: #ffffff;
+    background: #50aedb;
+    background-image: -webkit-linear-gradient(top, #50aedb, #2e7ac4);
+    background-image: -moz-linear-gradient(top, #50aedb, #2e7ac4);
+    background-image: -ms-linear-gradient(top, #50aedb, #2e7ac4);
+    background-image: -o-linear-gradient(top, #50aedb, #2e7ac4);
+    background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
+    border: none;
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+}
+
+.description {
+    font-size: 11px;
+    line-height: 1;
+    font-family: "Helvetica Neue Regular";
+    text-align: center;
+}
+
+
+
+
+
+
+
+
