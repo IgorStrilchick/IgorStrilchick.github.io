@@ -22,7 +22,7 @@ body {
 }
 
 .header {
-    background-color: #074c89;
+    background-image: url(../img/header_bg.jpg);
 }
 
 .wrapper {
@@ -42,9 +42,12 @@ body {
 .login {
     float: right;
     margin-right: 20px;
-    padding: 0 5px 0 5px;
-    background-image: url(../img/login_bg.jpg);
-    background-repeat: no-repeat;
+    padding: 0 0 0 10px;
+    background: #51b1dc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#51b1dc, #2e7ac4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#51b1dc, #2e7ac4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#51b1dc, #2e7ac4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#51b1dc, #2e7ac4); /* Standard syntax (must be last) */
 }
 
 .login:after {
@@ -121,7 +124,7 @@ body {
     top: 6px;
 }
 
-.hormenu {
+.horMenu {
     float: right;
 }
 
@@ -164,6 +167,7 @@ body {
 
 
 .formWrapper {
+    width: 560px;
     margin: 150px auto;
     top: 208px ;
     left: 328px;
@@ -244,22 +248,33 @@ body {
 }
 
 .line {
-    margin: 30px auto;
+    position: relative;
     text-align: center;
-    
 }
 
 .line p {
-    display: block;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1;
-    font-family: "Helvetica Neue Regular";
-    color: #999999;
-    background-image: url(../img/line.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    padding: 0 6px; 
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
 }
+
+.line:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 117px;
+    border-top: 2px groove #666666;
+}
+
+.line:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 117px;
+    border-top: 2px groove #666666;
+}
+
 
 
 .inputField {
@@ -286,13 +301,14 @@ body {
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #689bcc;
-    box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
--moz-box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
--webkit-box-shadow: 0px 0px 30px 5px rgba(77, 135, 178, 0.3);
+    box-shadow: 0px 0px 30px 5px rgba(47, 123, 197, 0.3);
+    -moz-box-shadow: 0px 0px 30px 5px rgba(47, 123, 197, 0.3);
+    -webkit-box-shadow: 0px 0px 30px 5px rgba(47, 123, 197, 0.3);
 }
 
-#send_me {
-    margin-left: 470px;
+.sendCheckbox {
+    width: 276px;
+    margin: 0 auto;
 }
 
 label {
